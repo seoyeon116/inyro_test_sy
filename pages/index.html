@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>영화 메인 페이지</title>
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+            defer
+        ></script>
+        <script type="module" src="../api/movieApi.js" defer></script>
+    </head>
+    <body class="w-screen h-screen flex-col items-center">
+        <seciton>
+            <h1 class="font-semibold text 2xl">인기 영화 목록</h1>
+            <p>주간 인기 영화를 확인하세요!</p>
+        </seciton>
+
+        <section class="flex gap-5">
+            <div class="w-52 h-64 bg-[#d9d9d9] rounded-2xl"></div>
+        </section>
+    </body>
+</html>

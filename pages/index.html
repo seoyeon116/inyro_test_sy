@@ -6,20 +6,32 @@
         <title>영화 메인 페이지</title>
         <link rel="stylesheet" href="../styles/reset.css" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
-            defer
-        ></script>
-        <script type="module" src="../api/movieApi.js" defer></script>
     </head>
-    <body class="w-screen h-screen flex-col items-center">
-        <seciton>
-            <h1 class="font-semibold text 2xl">인기 영화 목록</h1>
-            <p>주간 인기 영화를 확인하세요!</p>
-        </seciton>
-
-        <section class="flex gap-5">
-            <div class="w-52 h-64 bg-[#d9d9d9] rounded-2xl"></div>
-        </section>
+    <body class="w-screen flex flex-col items-center">
+        <header
+            class="w-full h-24 bg-[#fafafa] flex items-center pl-7 text-lg font-semibold"
+        >
+            <nav>
+                <a href="/">홈</a>
+                <a href="/movie">영화목록</a>
+            </nav>
+        </header>
+        <main
+            class="w-full h-full flex flex-col gap-10 items-center justify-center min-h-screen"
+        >
+            <h1 class="text-4xl font-bold">당신의 다음 영화는?</h1>
+            <div class="text-center">
+                <h2>전 세계 인기 영화부터, 지금 놓치면 안 될 명작까지.</h2>
+                <h2>감성적인 영화 탐험을 지금 시작하세요.</h2>
+            </div>
+            <a
+                href="/movie"
+                class="px-8 py-4 bg-emerald-500 text-white rounded-full"
+                >인기 영화 보러가기</a
+            >
+        </main>
+        <footer class="p-5 text-xs font-thin text-gray-500">
+            © 2025 병훈의 영화 서비스. All rights reserved.
+        </footer>
     </body>
 </html>
